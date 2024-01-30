@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=REM:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.skills{
+   
+    @media only screen and (max-width: 768px) {
+       // Styles for smaller screens (e.g., tablets)
+   
+       .icon-division {
+         justify-content: center;
+   
+         .icon {
+           margin: 0.5rem;
+         }
+       }
+   
+       .skills-expansion {
+         flex-direction: column;
+   
+         img {
+           height: 18rem;
+           margin: 1rem;
+         }
+   
+         .skills-expansion-box1 {
+           margin-right: 0;
+           margin-top: 1rem;
+           text-align: center;
+   
+           ul {
+             margin-left: 0;
+           }
+         }
+       }}
+   
+        @media only screen and (max-width: 480px) {
+       // Styles for smaller screens (e.g., mobile phones)
+   
+       .skills h1 {
+         font-size: 2rem;
+       }
+   
+       .icon-division {
+         .icon {
+           font-size: 2rem;
+           padding: 1rem;
+         }
+       }
+   
+       .skills-expansion {
+         width: 90%;
+   
+         img {
+           height: 15rem;
+           margin: 1rem;
+         }
+   
+         .skills-expansion-box1 {
+           margin-right: 0;
+           padding: 0.5rem;
+   
+           ul {
+             margin-left: 0;
+           }
+         }
+       }
+     }
+   
+       h1{
+           text-align: center;
+           font-size: 3rem;
+           text-decoration: underline;
+           text-underline-offset: 10px;
+           margin: 2rem;
+           font-family: 'Concert One', sans-serif;
+           font-family: 'REM', sans-serif;
+       }
+   .icon-division{
+       @include flex();
+       justify-content: space-around;
+       margin-top: 2rem;
+       flex-wrap: wrap;
+        .icon{
+           background-color: black;
+           color: white;
+           border-radius: 50%;
+           border: 2px solid black;
+           font-size: 8rem;
+           padding: 1.3rem;
+           margin: 1rem;
+           transition: all .3s ease-in-out;
+       }
+       .icon:hover{
+           transform: scale(1.1);
+           color: black;
+           background-color: white;
+           box-shadow: 2px 5px 15px #000000;
+       }
+   }
+   .skills-expansion{
+       height: auto;
+       width: 96%;
+       background-color: black;
+       margin: 2rem;
+       border-radius: 2rem;
+       @include flex();
+       justify-content: space-evenly;
+   img{
+       height: 30rem;
+       margin: 2rem;
+       border-radius: 2rem;
+   }
+   .skills-expansion-box1{
+       height: auto;
+       width: auto;
+       background-color: white;
+       margin-right: 1rem;
+       padding: 1rem;
+       border-radius: 2rem;
+       text-wrap: wrap;
+       @include flex();
+       justify-content: space-evenly;
+       ul{
+           margin-left: 6rem;
+       }
+   }
+   
+       }
+   
+   }

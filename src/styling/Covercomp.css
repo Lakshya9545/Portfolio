@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=REM:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 7rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.home .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  width: 40%;
+  transition: all 0.3s ease-in-out;
+}
+.home .content h3 {
+  font-size: 2rem;
+  text-align: left;
+}
+.home .content h1 {
+  font-size: 3rem;
+}
+.home .content p {
+  margin-top: 1em;
+}
+.home .content .content-links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+}
+.home .content .content-links a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  cursor: none;
+  margin: 1rem;
+}
+.home .content .content-links a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  padding: 1rem;
+}
+.home .image {
+  width: 23rem;
+  height: 23rem;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: 15px 15px 25px black;
+}
+@media only screen and (max-width: 868px) {
+  .home .image {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+@media only screen and (max-width: 328px) {
+  .home .image {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+.know-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.know-more a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  padding: 1.6rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  cursor: none;
+}
+.know-more a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  padding: 1rem;
+}/*# sourceMappingURL=Covercomp.css.map */

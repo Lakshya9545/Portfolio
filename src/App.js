@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+ import Cursor from "./component/Cursor";
+import Navbar from "./component/Navbar";
+import AnimatedCursor from "./component/Cursor.jsx";
+import "./styling/style.css";
+import Covercomp from "./component/Covercomp.jsx";
+import Aboutmep1 from "./component/Aboutmep1.jsx";
+import Projectp1 from "./component/Projectp1.jsx";
+import Skillsp1 from "./component/Skillsp1.jsx";
+import Footer from "./component/Footer.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+
+<AnimatedCursor/>
+
+<Navbar/>
+
+<Covercomp/>
+
+<Aboutmep1/>
+
+<Projectp1/>
+
+<Skillsp1/>
+
+<Footer/>
+
+
+</>
+
   );
 }
 

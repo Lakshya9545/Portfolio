@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=REM:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'REM', sans-serif;
+}
+
+body {
+    // font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ffffff;
+    border-radius: 20px;
+    cursor: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    cursor: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+    box-shadow: inset 0 0 5px #000000;
+    cursor: none;
+}
+
+
+
+#click {
+    display: none;
+}
+
+
+
+
+
+
+
+@media (max-width:850px) {
+
+    .header {
+        background-color: rgb(255, 255, 255);
+        border-bottom: 2px solid #000000;
+        justify-content: space-between;
+        position: block;
+    }  
+
+    nav .menu-btn i {
+        display: block;
+        color: rgb(0, 0, 0);
+        // align-items: center;
+        text-align: center;
+    }
+
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+        color: rgb(0, 0, 0);
+         // align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        top: 95px;
+        position: fixed;
+        left: -100%;
+        background: #ffffff;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        transition: all .5s ease-in-out;
+
+    }
+
+    #click:checked~.nav-links {
+        left: 0%;
+    }
+
+    .header .nav-links li {
+        margin-top: 2rem;
+        font-size: 2rem;
+        // margin-left: 4rem;
+        font-weight: bold;
+
+    }
+
+    .header .nav-links li a {
+        color: rgb(0, 0, 0);
+        display: block;
+    }
+    .logo{
+        visibility: visible;
+    }
+    .link{
+        text-shadow: none;
+        font-size: auto;
+        text-align: center;
+    }
+
+}
