@@ -1,4 +1,3 @@
- import Cursor from "./component/Cursor";
 import Navbar from "./component/Navbar";
 import AnimatedCursor from "./component/Cursor.jsx";
 import "./styling/style.css";

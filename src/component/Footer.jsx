@@ -1,5 +1,12 @@
 import React from 'react'
 import "../styling/Footer.css"
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaDiscord } from "react-icons/fa6";
+import { FaReddit } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 function Footer() {
   return (
     <>
@@ -49,12 +56,12 @@ function Footer() {
       </div>
     </div>
     <div className="socialmedia">
-      <i className="fa-brands fa-instagram" />
-      <i className="fa-brands fa-github" />
-      <i className="fa-brands fa-square-x-twitter" />
-      <i className="fa-brands fa-discord" />
-      <i className="fa-brands fa-reddit-alien" />
-      <i className="fa-brands fa-linkedin" />
+    <FaInstagram />
+    <FaGithub />
+    <FaSquareXTwitter />
+    <FaDiscord />
+    <FaReddit />
+    <FaLinkedin />
     </div>
   </div>
     </>
